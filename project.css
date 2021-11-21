@@ -1,0 +1,717 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bagian-dalam {
+    margin-left: 50px;
+}
+
+.penuh-dalam {
+    margin-bottom: -10px 0px 10px 0px;
+}
+
+.penuh-dalam h1{
+    margin: 5px 15px;
+}
+
+.penuh-dalam p {
+    margin-top: 10px;
+}
+
+.bagian-penuh img{
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+nav {
+    color: white;
+    text-align: center;
+    position: fixed;
+    line-height: 50px;
+    width: 100%;
+    background: #54a0ff;
+    height: 100px;
+    border-bottom: 5px solid #ff9ff3;
+}
+
+nav .judul {
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 27px;
+}
+
+nav .judul h3 {
+    font-size: 20px;
+}
+
+
+nav.biru {
+    background-color: white;
+}
+
+nav .logo {
+    float: left;
+    position: relative;
+}
+
+nav .logo img {
+    width: 70px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+nav .menu {
+    float: right;
+    padding: 25px 30px;
+    margin: 0;
+    margin-right: 30px;
+    display: inline;
+    
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav .menu ul li a {
+    display: block;
+    padding: 0px 15px;
+    color:black;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 15px;
+    transition: 1s;
+}
+
+nav .menu ul li a:hover {
+    background-color: blueviolet;
+}
+
+nav .menu ul ul {
+    position: absolute;
+    top: 60px;
+    line-height: 20px;
+    display: none;
+}
+
+nav .menu ul li:hover > ul {
+    display: block;
+}
+
+nav .menu ul ul li{
+    width: 100px;
+    float: none;
+    display: list-item;
+    position: relative;
+    line-height: 20px;
+}
+
+
+nav .menu ul ul ul li {
+    position: relative;
+    left: 100%;
+    bottom: 60px;
+}
+
+header .penuh-dalam{
+    z-index: 100;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 540px;
+
+}
+
+header .penuh-dalam h1{
+    font-size: 25px
+}
+
+.tombol {
+    background-color: #c86bc8;
+    height: 40px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.tombol:hover {
+    color: turquoise; transition: 1s ease-in-out;
+}
+
+header .overlay {
+    position: absolute;
+    top: 102px;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.tombol-menu .garis {
+    height: 3px;
+    background-color: white;
+}
+@media screen and (max-width: 991.98px) {
+    .bagian-dalam {
+        width: 90%;
+    }
+    nav .menu ul {
+        display: none;
+    }
+    .tombol-menu {
+        display: flex;
+        padding-top: 13px;
+    }
+}
+
+
+.Barang .bagian-atas h1 {
+    text-align: center; font-size: 25px; color: #00cec9;
+    margin-top: 50px;
+}
+
+
+.bagian-atas {
+    float: top;
+}
+
+.Barang .bagian-atas i {
+    width: 5px; font-size: 30px; margin-left: 25px; 
+    padding-left: 300px;
+    padding-top: 30px;
+}
+
+.Barang .bagian-atas p {
+    font-size: 20px; text-align: center; color: silver;
+    padding-top: 30px;
+}
+
+.kolom-pertama img {overflow: hidden; float: left; padding-right: 6px; padding-left: 10px; padding-top: 5px;}
+.kolom-pertama .Baju h2{font-size: 20px; }
+.kolom-pertama .Baju p{text-align: justify; width: 580px; padding-top: 20px;}
+.kolom-pertama .Baju p a{text-align: justify;}
+.kolom-pertama .Baju {width: 310px; float: left; padding-left: 200px; padding-top: 100px;}
+
+.kolom-pertama .jam img {overflow: hidden; float: left; padding-right: 6px; padding-left: 10px; padding-top: 5px;}
+.kolom-pertama .jam h2{font-size: 20px;}
+.kolom-pertama .jam p{text-align: justify; padding-top: 16px;} 
+.kolom-pertama .jam p a{text-align: justify; } 
+.kolom-pertama .jam {width: 310px; float: left; padding-left: 330px; padding-top: 100px;}
+
+.kolom-kedua  img {overflow: hidden; float: left; padding-right: 6px; padding-left: 10px; padding-top: 5px;}
+.kolom-kedua .sandal h2{font-size: 20px; }
+.kolom-kedua .sandal p{text-align: justify; padding-top: 15px; }
+.kolom-kedua .sandal p a{text-align: justify; margin-top: 25px;} 
+.kolom-kedua .sandal {width: 310px;  float:left ; padding-left: 200px; padding-top: 75px;}
+
+.kolom-kedua .sepatu img {overflow: hidden; float: left; padding-right: 6px; padding-left: 10px; padding-top: 5px;}
+.kolom-kedua .sepatu h2{font-size: 20px;}
+.kolom-kedua .sepatu p{text-align: justify; padding-top: 10px;}
+.kolom-kedua .sepatu p a{text-align: justify;}
+.kolom-kedua .sepatu {width: 310px; float: left; padding-left: 330px; margin-top: 100px;}
+
+
+
+
+.tengah-bagian img {
+    width: 100%; height: 400px;
+}
+
+.tengah-bagian .dalam h5{
+    margin-top: -250px; font-size: 40px; color: #7bed9f; text-align: center;
+}
+
+.dalam p {
+    margin-top: 10px; color: white; text-align: center;
+}
+
+.dalam p a {
+    margin-top: 5px;
+}
+.bagian-tengah img {
+    width: 1349px; height: 500px; margin-top: 180px;
+}
+
+.bagian-tengah .tengah-tengah .overlay1 img {
+    width: 1349px;
+    position: relative;
+    height: 500px;
+    background-color: black;
+    opacity: 50%;
+}
+
+.bagian-tengah .dalam h1 {
+    font-size: 40px; color: #26de81; top: 50%;
+    width: 100%;
+}
+
+.bagian-tengah .dalam p {
+    font-size: 17px;
+}
+
+
+.stok-barang h1 {
+    text-align: center; font-size: 30px; color: #4b6584; margin-top: 150px;
+}
+
+.stok-barang i {
+    font-size: 50px; padding-left: 650px; margin-top: 25px; color: #3867d6;
+}
+
+.stok-barang p {
+    font-size: 17px; text-align: center; margin-top: 20px; color: silver;
+}
+
+.container {
+    padding-left: 200px; margin-top: 70px;
+    float: left; margin-right: 15px; padding-right: 30px;
+    
+}
+
+.container .isi1 .isian1 {
+    background-color: turquoise; 
+    width: 350px; 
+    height: 90px;
+    border-radius: 6px;
+}
+
+.container .isian1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: magenta;
+    
+}
+
+.container .isi2 .isian2 {
+    background-color: turquoise; 
+    width: 350px; 
+    height: 90px;
+    border-radius: 6px;
+}
+
+.container .isian2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+
+.container .isi3 .isian3 {
+    background-color: turquoise; 
+    width: 350px; 
+    height: 90px;
+    border-radius: 6px;
+}
+
+.container .isian3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+
+.container .isi4 .isian4 {
+    background-color: turquoise; 
+    width: 350px; 
+    height: 90px;
+    border-radius: 6px;
+}
+
+.container .isian4 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.container .tombol1 {
+    background-color: #30336b;
+    width: 350px;
+    height: 75px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.container .tombol1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.container .tombol1 a:hover {
+    color: darksalmon;
+}
+
+
+
+
+.bagian-tengah-bawah img {
+    width: 610px; height: 270px; padding-left: 15px;
+    padding-top: 70px;
+}
+
+.bagian-tengah-bawah .bawah-tengah h1 {
+    margin-top: 30px; text-align: left;
+    font-size: 25px;
+}
+
+.bagian-tengah-bawah .bawah-tengah p {
+  text-align: left; margin-left: 15px;
+  margin-top: 25px;
+  font-size: 17px;
+  width: 1000px;
+}
+
+.bagian-tengah-bawah .bawah-tengah p a{
+    text-align: left; padding-left: 15px;
+    margin-top: 15px; font-size: 20px;
+}
+
+
+
+
+
+
+
+.bagian-bawah img {
+    width: 100%; height: 850px; padding-top:  70px;
+}
+
+.tengah-bawah {
+    text-align: center;
+}
+
+.tengah-bawah h1 {
+    color: #fc5c65; font-size: 25px; margin-top: -750px;
+    padding-bottom: -40px;  text-align: center;
+}
+
+.tengah-bawah p {
+    color: white; text-align: center; margin-bottom: 30px; line-height: 40px;
+    font-size: 17px; color: white;
+
+}
+
+.tengah-bawah i {
+    color: thistle; font-size: 60px; 
+     text-align: center;
+}
+
+
+
+table {font-family: "Arial"; padding-left: 360px;}
+
+
+th, td {padding: 5px 25px;}
+
+
+thead {background-color: blueviolet; color: white;}
+tbody {background-color: darksalmon; }
+td {color: wheat;}
+
+
+
+tbody tr td:nth-child(2) {
+      text-align: center;
+
+}
+
+tbody tr td:nth-child(3),
+tbody tr td:nth-child(4) {
+    text-align: right;
+}
+
+tr:nth-child(even) {background-color: white;}
+
+
+
+
+
+.bawah-sekali {
+     padding-top: 550px;
+}
+
+.bawah-sekali h1 {
+    font-size: 30px; color: #34e7e4; padding-bottom: 15px; text-align: center;
+}
+
+.bawah-sekali i {
+    font-size: 60px; color: thistle; padding-bottom: 15px;
+    margin-left: 645px;
+}
+
+.bawah-sekali .jelas p {
+    width: 400px; text-align: center; margin-left: 490px; 
+    color: silver;
+
+}   
+
+
+
+.tiga-kolom {
+    overflow: hidden; display: flex; margin-left: 105px; 
+    text-align: center; margin-top: 10px;
+    
+}
+
+.tiga-kolom .gambar{
+    background-color: #7ed6df; padding-bottom: 10px;
+    border-radius: 8px;
+}
+
+.tiga-kolom .gambar img {
+    padding-top: 80px; height: 185px; width: 285px;
+    margin-right: 15px; border-radius: 8px;
+}
+
+.tiga-kolom .gambar h2 {
+    padding-top: 30px; margin-left: 35px; font-size: 25px;
+    text-align: left;
+}
+
+.tiga-kolom .gambar p {
+    color: white; padding-top: 15px; width: 350px;
+    text-align: left; padding-left: 35px;
+}
+
+
+.tiga-kolom .gambar2 {
+    background-color: #7ed6df; margin-left: 30px;
+    padding-bottom: 20px; border-radius: 8px;
+}
+
+.tiga-kolom .gambar2 img {
+    padding-top: 80px;  margin-right: 15px;
+    border-radius: 8px; margin-left: 10px;
+}
+
+.tiga-kolom .gambar2 h3 {
+    padding-top: 30px; margin-left: 35px; font-size: 25px;
+    text-align: left;
+}
+
+.tiga-kolom .gambar2 p {
+    color: white; padding-top: 15px; width: 350px;
+    text-align: left; padding-left: 35px;
+}
+
+.tiga-kolom .gambar3 {
+    background-color: #7ed6df; margin-left: 30px;
+    padding-bottom: 20px; border-radius: 8px;
+}
+
+.tiga-kolom .gambar3 img {
+    padding-top: 80px; height: 180px; width: 280px;
+    margin-right: 15px; margin-left: 10px; border-radius: 8px;
+}
+
+.tiga-kolom .gambar3 h4 {
+    padding-top: 30px; margin-left: 35px; font-size: 25px;
+    text-align: left; 
+}
+
+.tiga-kolom .gambar3 p {
+    color: white; padding-top: 15px; width: 350px;
+    text-align: left; padding-left: 35px;
+}
+
+.penutup .map {
+    float: left;
+    margin-top: 120px;
+}
+
+form {
+    background: turquoise;
+    padding: 25px; width: 600px;
+    margin: auto;
+    float: right;
+    margin-top: 120px;
+    width: 650px;
+    height: 400px;
+    
+    }
+    
+    .pendaftaran {
+    background: burlywood;
+    padding: 15px; 
+    border: 2px solid yellow; 
+    overflow: hidden;
+    }
+    
+    .pendaftaran .form2 input  {
+    margin:2px; 
+    line-height: 24px;
+    float: left;
+    }
+    
+    .pendaftaran .form2 input#name,#email{
+    width: 230px;
+    
+    }
+    .pendaftaran .form2 input:nth-child(3){
+    margin-left: 70px;
+    margin-top: -15px;
+    }
+    
+    .pendaftaran .form2 input#Subject{
+    width: 545px;
+    }
+    
+    .pendaftaran .form2 textarea {
+    margin-top: 40px;
+    height: 130px;
+    padding: 10px;
+    width: 545px;
+    }
+    
+    .pendaftaran .form2 input.inputText {
+
+    padding: 0 0 0 10px;
+
+}
+    
+    .pendaftaran .form2 input.inputText:hover {
+    background-color: rgb(190, 137, 186); 
+    border-radius: 5px; 
+    font-size: 15px; 
+    border: 3px solid blue;
+    }
+    
+    .button {
+        position: relative;
+    }
+    
+    .button .klik {
+        display: inline;
+    }
+    
+    .button .klik span {display: none;}
+    
+    .klik:hover span {
+    display: inline-block; 
+    background-color: blueviolet; 
+    color:white; 
+    padding: 10px; 
+    font-size: 12px;
+    transition: 3s ease-in-out;
+}
+    
+    input[type=submit],
+    button[type=button] {padding: 8px;}
+
+
+
+.kolom-tambahan .tambahan-satu h5 {
+    font-size: 26px;
+    border-bottom: 2px solid red;
+    width: 390px;
+    text-align: center;
+    margin-left: 400px;
+}
+
+.kolom-tambahan .tambahan-satu p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.persetujuan {
+    padding-top: 10px;
+    float: top;
+}
+
+.persetujuan .form3 input{
+    line-height: 24px;
+    margin-top: 10px;
+    float: left;    
+}
+
+.persetujuan .form3 input#name{
+    width: 120px;
+    height: 38px;
+}
+
+.persetujuan .form3 input#email{
+    width: 120px;
+    height: 38px;
+    margin-left: 10px;
+}
+
+
+.persetujuan .form3 .form-select {
+    margin-right: 10px; margin-left: 10px;
+    padding: 10px 10px;
+}
+
+.persetujuan .form3 .form-select-satu {
+    margin-right: 10px; margin-left: 10px;
+    padding: 10px 10px;
+}
+
+.persetujuan p {
+    background-color: royalblue;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+}
+
+.persetujuan .tombol3 p a {
+    text-align: center;
+}
+
+.kata-tambahan {
+    background-color: sandybrown;
+}
+
+.kata-tambahan .kata-kata p a {
+    text-decoration: none; color: white;
+    background-color: blueviolet;
+    float: left;
+    padding: 20px 20px;
+    margin: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.kata-tambahan .kata-kata p a:hover{
+    color: burlywood;
+    transition: 1s ease-in-out;
+}
+
+
+footer { color: black; text-align: center; font-size: 15px;
+    margin-top: 100px; float: left;
+}
+footer a {color: black;}
+
